@@ -31,8 +31,7 @@ def select_theme():
         "Bubbles": "./images/bubbles.jpg",
         "Nature": "./images/Nature.jpg",
         "School": "./images/school.jpg",
-        "Triangles": "./images/triangles.jpg",
-        "Minimalistic Green": "./images/green.jpg"
+        "Triangles": "./images/triangles.jpg"
     }[theme]
     return bg_theme
 
@@ -64,7 +63,7 @@ theme_var.set("Bubbles")
 
 # dropdown menu for themes
 theme_box = canvas.create_text(window_width / 2, 20, anchor="center", text="Select The Theme For Powerpoint:", fill="white")
-dropdown_theme = ttk.Combobox(root, textvariable=theme_var, values=["Bubbles", "Nature", "School", "Triangles", "Minimalistic Green"])
+dropdown_theme = ttk.Combobox(root, textvariable=theme_var, values=["Bubbles", "Nature", "School", "Triangles"])
 canvas.create_window(window_width / 2, 60, window=dropdown_theme)
 
 # prompting user for title of powerpoint
