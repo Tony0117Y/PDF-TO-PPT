@@ -4,7 +4,7 @@ import pdfplumber
 from pptx import Presentation
 from pptx.util import Inches
 from pptx.util import Pt
-from gpt import gpt_summarise
+from Summarization import gpt_summarise
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
 import fitz
