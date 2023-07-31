@@ -1,8 +1,11 @@
+# imports
 import openai
 import os
 
+# api key for OPENAI playground
 openai.api_key = "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"
 
+# prompt given to gpt of extracted information to summarize into 5 bullet points for slides in powerpoint
 def gpt_summarise(text):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-0301",
