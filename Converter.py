@@ -69,7 +69,7 @@ def convert_pdf_to_pptx(input_pdf, output_pptx, powerpoint_title, powerpoint_sub
                 image_slide.shapes._spTree.remove(image_slide_image._element)
                 image_slide.shapes._spTree.insert(2, image_slide_image._element)
 
-                image_width = Inches(5)
+                image_width = Inches(7)
                 image_height = Inches(5)
                 left = (powerpoint_pptx.slide_width - image_width) // 2
                 top = (powerpoint_pptx.slide_height - image_height) // 2
