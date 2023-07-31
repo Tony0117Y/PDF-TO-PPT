@@ -1,7 +1,7 @@
 # imports
 import tkinter as tk
 from tkinter import filedialog, ttk
-from convert import convert_pdf_to_pptx
+from Converter import convert_pdf_to_pptx
 from PIL import Image, ImageTk
 
 # declare pdf file variable
