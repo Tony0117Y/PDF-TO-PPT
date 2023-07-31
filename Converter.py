@@ -111,7 +111,7 @@ def convert_pdf_to_pptx(input_pdf, output_pptx, powerpoint_title, powerpoint_sub
             text_box.word_wrap = True
 
             # extracted content is given to api to have information summarized
-            summarized_content = gpt_summarise('\n'.join(remaining_lines))
+            summarized_content = summarise('\n'.join(remaining_lines))
 
             # summarized information is formatted into a textbox on slide
             p = text_box.add_paragraph()
