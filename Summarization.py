@@ -3,7 +3,7 @@ import openai
 import os
 
 # api key for OPENAI playground
-openai.api_key = "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"
+openai.api_key = ""
 
 # prompt given to gpt of extracted information to summarize into 5 bullet points for slides in powerpoint
 def summarise(text):
